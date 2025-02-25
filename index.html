@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>My-shop</h1>
+        <nav>
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('about')">About</a>
+            <a href="#" onclick="showPage('contact')">Contact</a>
+            <button id="toggleMode">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home" class="page active">
+            <h2>Daftar Produk</h2>
+            <div class="container-produk">
+                <div class="produk">
+                    <img src="produk1.jpg" alt="Produk 1">
+                    <h3>Produk 1</h3>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <span>Rp100.000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="produk">
+                    <img src="produk2.jpg" alt="Produk 2">
+                    <h3>Produk 2</h3>
+                    <p>Deskripsi singkat produk 2.</p>
+                    <span>Rp200.000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="produk">
+                    <img src="produk3.jpg" alt="Produk 3">
+                    <h3>Produk 3</h3>
+                    <p>Deskripsi singkat produk 3.</p>
+                    <span>Rp300.000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="produk">
+                    <img src="produk4.jpg" alt="Produk 4">
+                    <h3>Produk 4</h3>
+                    <p>Deskripsi singkat produk 4.</p>
+                    <span>Rp400.000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="page">
+            <h2>Tentang Kami</h2>
+            <div class="accordion">
+                <div class="item">
+                    <button class="accordion-button">Siapa kami?</button>
+                    <div class="accordion-content">Kami adalah toko online terbaik.</div>
+                </div>
+                <div class="item">
+                    <button class="accordion-button">Apa produk kami?</button>
+                    <div class="accordion-content">Kami menjual berbagai kebutuhan sehari-hari.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="page">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm">
+                <input type="text" id="nama" placeholder="Nama">
+                <input type="email" id="email" placeholder="Email">
+                <textarea id="pesan" placeholder="Pesan"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><span class="logo">Toko<span class="green">Online</span></span></h3>
+                <p>Toko terbaik buat kebutuhanmu! Produk berkualitas, harga bersahabat.</p>
+                <p>📍 Jakarta, Indonesia</p>
+                <p>📞 <a href="tel:081234567890">0812-3456-7890</a></p>
+                <p>✉️ <a href="mailto:contact@tokoonline.com">contact@tokoonline.com</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>🔗 Navigasi</h3>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">🏠 Home</a></li>
+                    <li><a href="#" onclick="showPage('about')">👤 About</a></li>
+                    <li><a href="#" onclick="showPage('contact')">📩 Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>❓ Bantuan</h3>
+                <ul>
+                    <li><a href="#">📜 FAQ</a></li>
+                    <li><a href="#">📑 Syarat & Ketentuan</a></li>
+                    <li><a href="#">🔐 Privasi</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>🌎 Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="fb.svg" alt="Facebook"></a>
+                    <a href="#"><img src="ig.svg" alt="Instagram"></a>
+                    <a href="#"><img src="tw.svg" alt="Twitter"></a>
+                </div>
+                <h3>📩 Berlangganan</h3>
+                <div class="newsletter">
+                    <input type="email" placeholder="Masukkan email kamu..." required>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 <b>Toko Online</b>. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
